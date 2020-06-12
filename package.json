@@ -1,0 +1,27 @@
+{
+  "name": "js-exercise",
+  "version": "0.1.0",
+  "description": "Flex your JS muscles",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "start": "jest --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/undefined-solutions/js-exercise.git"
+  },
+  "author": "Jonathon Munsell <jm@undefinedsolutions.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/undefined-solutions/js-exercise/issues"
+  },
+  "homepage": "https://github.com/undefined-solutions/js-exercise#readme",
+  "devDependencies": {
+    "@babel/preset-env": "^7.10.2",
+    "babel-core": "^6.26.3",
+    "babel-jest": "^26.0.1",
+    "jest": "^26.0.1",
+    "regenerator-runtime": "^0.13.5"
+  }
+}

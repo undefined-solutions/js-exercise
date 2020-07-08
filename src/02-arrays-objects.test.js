@@ -22,8 +22,10 @@ describe('arrays', () => {
   });
 
   it('you should be able to remove all instances of a value from an array', () => {
-    sampleArray.push(2); // Make sure the value appears more than one time
-    sampleArray.push(2); // Make sure the value appears more than one time in a row
+    // Make sure the value appears more than one time
+    sampleArray.push(2);
+    // Make sure the value appears more than one time in a row
+    sampleArray.push(2);
 
     const result = remove(sampleArray, 2);
 
@@ -104,14 +106,14 @@ describe('objects', () => {
   it('you should be able to iterate over an object\'s "own" properties', function () {
     // define a function for fn so that the following will pass
     TypeC = function () {
-      this.foo = 'bar';
-      this.baz = 'bim';
+      this.dog = 'Drake';
+      this.cat = 'Twix';
     };
 
-    TypeC.prototype.bop = 'bip';
+    TypeC.prototype.fish = 'Kenny';
 
     const obj = new TypeC();
 
-    expect(iterate(obj)).toEqual(['foo: bar', 'baz: bim']);
+    expect(iterate(obj)).toEqual(['dog: Drake', 'cat: Twix']);
   });
 });

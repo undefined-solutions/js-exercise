@@ -30,20 +30,20 @@ describe('the basics', () => {
     expect(parseInteger('0x12')).toBe(0);
   });
 
-  it('you should be able to work with logical or', function () {
-    expect(or(false, true)).toBeTruthy();
-    expect(or(true, false)).toBeTruthy();
-    expect(or(true, true)).toBeTruthy();
-    expect(or(false, false)).toBeFalsy();
-    expect(or(3, 4)).not.toBe(7);
-  });
-
   it('you should be able to work with logical and', function () {
     expect(and(false, true)).toBeFalsy();
     expect(and(false, false)).toBeFalsy();
     expect(and(true, false)).toBeFalsy();
     expect(and(true, true)).toBeTruthy();
     expect(and(3, 4)).toBeTruthy();
+  });
+
+  it('you should be able to work with logical or', function () {
+    expect(or(false, true)).toBeTruthy();
+    expect(or(true, false)).toBeTruthy();
+    expect(or(true, true)).toBeTruthy();
+    expect(or(false, false)).toBeFalsy();
+    expect(or(3, 4)).not.toBe(7);
   });
 });
 

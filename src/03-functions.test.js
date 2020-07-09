@@ -1,9 +1,8 @@
 import {
-  count,
   fizzBuzz,
   functionFunction,
   makeClosures,
-  partial,
+  partial
 } from './03-functions';
 
 describe('functions', () => {
@@ -61,37 +60,5 @@ describe('functions', () => {
 
     expect(fizzBuzz(15)).toBe('fizzbuzz');
     expect(fizzBuzz(num * 3 * 5)).toBe('fizzbuzz');
-  });
-});
-
-describe('counter', () => {
-  const logFn = jest.fn();
-  jest.useFakeTimers('modern');
-
-  afterEach(() => {
-    logFn.mockClear();
-  });
-
-  it('should count from start number to end number, one per 1/10th of a second', () => {
-    count(logFn, 1, 5);
-
-    for (let i = 1; i <= 5; i++) {
-      expect(logFn).toHaveBeenCalledTimes(i);
-      jest.advanceTimersByTime(100);
-    }
-
-    expect(logFn).toHaveBeenCalledTimes(5);
-    expect(logFn).toHaveBeenNthCalledWith(1, 1);
-    expect(logFn).toHaveBeenNthCalledWith(5, 5);
-  });
-
-  it('should provide a method to cancel the counting', () => {
-    const counter = count(logFn, 1, 5);
-
-    counter.cancel();
-
-    jest.advanceTimersByTime(550);
-
-    expect(logFn.mock.calls.length).toBeLessThan(5);
   });
 });

@@ -34,7 +34,8 @@ export const insert = (arr, item, index) => {
 };
 
 /**
- * Find all items that are duplicated in an array and return a list of duplicate items.
+ * Find all items that are duplicated in an array and return a list of
+ * duplicate items.
  *
  * @param {number[]} arr An array of numbers.
  * @returns {number[]} An array of numbers found to be duplicated.
@@ -58,7 +59,8 @@ export const square = (arr) => {
  *
  * @param {number[]} arr An array of numbers.
  * @param {number} target The target item to find all occurences of.
- * @returns {number[]} An array of indices where the item was found in the array.
+ * @returns {number[]} An array of indices where the item was found in
+ *                      the array.
  */
 export const findAllOccurrences = (arr, target) => {
   return;
@@ -70,7 +72,8 @@ export const findAllOccurrences = (arr, target) => {
  * Calls a function in the context of an object.
  *
  * @param {Function} fn
- * @param {Object} obj An object whose context the function should be called with.
+ * @param {Object} obj An object whose context the function should be
+ *                      called with.
  * @returns {*} The result of calling the function in context of the object.
  */
 export const alterContext = (fn, obj) => {

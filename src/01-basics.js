@@ -15,7 +15,7 @@ export const comparison = (val1, val2) => {
  */
 export const globals = () => {
   myObject = {
-    name: "Little Guy"
+    name: 'Little Guy'
   };
 
   return myObject;

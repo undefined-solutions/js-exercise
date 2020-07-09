@@ -69,28 +69,6 @@ export const findAllOccurrences = (arr, target) => {
 // Objects
 
 /**
- * Calls a function in the context of an object.
- *
- * @param {Function} fn
- * @param {Object} obj An object whose context the function should be
- *                      called with.
- * @returns {*} The result of calling the function in context of the object.
- */
-export const alterContext = (fn, obj) => {
-  return;
-};
-
-/**
- * Alter all objects of a provided type adding a "greeting" property to all instances.
- *
- * @param {Function} constructor An object constructor function.
- * @param {string} greeting A string to set as the greeting.
- */
-export const alterObjects = (constructor, greeting) => {
-  // alter objects here
-};
-
-/**
  * Returns an array of formatted strings for an objects own properties and their
  * value delimited by ": ".
  *

@@ -90,27 +90,6 @@ export const truncate = (arr) => {
 };
 
 /**
- * Add an item to the beginning of an array.
- *
- * @param {number[]} arr
- * @param {number} item
- * @returns {number[]} An updated array with the item added to the beginning.
- */
-export const prepend = (arr, item) => {
-  return;
-};
-
-/**
- * Remove an item from the front of an array.
- *
- * @param {number[]} arr
- * @returns {number[]} The updated array with the first item removed.
- */
-export const curtail = (arr) => {
-  return;
-};
-
-/**
  * Merge to arrays together.
  *
  * @param {Array} arr1

@@ -1,9 +1,10 @@
 /**
- * Compare two values for equality.
+ * Compare two values for strict equality.
  *
  * @param {*} val1
  * @param {*} val2
- * @returns {boolean} Return true if values are equal, otherwise false.
+ * @returns {boolean} Return true if values are strictly equal, otherwise
+ *                      false.
  */
 export const comparison = (val1, val2) => {
   return;
@@ -14,7 +15,7 @@ export const comparison = (val1, val2) => {
  */
 export const globals = () => {
   myObject = {
-    name: 'Little Guy',
+    name: 'Little Guy'
   };
 
   return myObject;
@@ -22,6 +23,7 @@ export const globals = () => {
 
 /**
  * Safely parse a string as a Base-10 integer.
+ *
  * @param {string} num A string to parse an integer value out of.
  * @returns {number} The Base-10 integer in the string.
  */
@@ -88,32 +90,12 @@ export const truncate = (arr) => {
 };
 
 /**
- * Add an item to the beginning of an array.
- *
- * @param {number[]} arr
- * @param {number} item
- * @returns {number[]} An updated array with the item added to the beginning.
- */
-export const prepend = (arr, item) => {
-  return;
-};
-
-/**
- * Remove an item from the front of an array.
- *
- * @param {number[]} arr
- * @returns {number[]} The updated array with the first item removed.
- */
-export const curtail = (arr) => {
-  return;
-};
-
-/**
  * Merge to arrays together.
  *
  * @param {Array} arr1
  * @param {Array} arr2
- * @returns {Array} A merged array containing the contents of both arr1 and arr2.
+ * @returns {Array} A merged array containing the contents of both arr1 and
+ *                    arr2.
  */
 export const concat = (arr1, arr2) => {
   return;

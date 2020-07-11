@@ -3,13 +3,11 @@ import {
   append,
   comparison,
   concat,
-  curtail,
   globals,
   indexOf,
   or,
   parseInteger,
-  prepend,
-  truncate,
+  truncate
 } from './01-basics';
 
 describe('the basics', () => {
@@ -30,20 +28,20 @@ describe('the basics', () => {
     expect(parseInteger('0x12')).toBe(0);
   });
 
-  it('you should be able to work with logical or', function () {
-    expect(or(false, true)).toBeTruthy();
-    expect(or(true, false)).toBeTruthy();
-    expect(or(true, true)).toBeTruthy();
-    expect(or(false, false)).toBeFalsy();
-    expect(or(3, 4)).not.toBe(7);
-  });
-
   it('you should be able to work with logical and', function () {
     expect(and(false, true)).toBeFalsy();
     expect(and(false, false)).toBeFalsy();
     expect(and(true, false)).toBeFalsy();
     expect(and(true, true)).toBeTruthy();
     expect(and(3, 4)).toBeTruthy();
+  });
+
+  it('you should be able to work with logical or', function () {
+    expect(or(false, true)).toBeTruthy();
+    expect(or(true, false)).toBeTruthy();
+    expect(or(true, true)).toBeTruthy();
+    expect(or(false, false)).toBeFalsy();
+    expect(or(3, 4)).not.toBe(7);
   });
 });
 
@@ -71,20 +69,6 @@ describe('array methods', () => {
 
     expect(result).toHaveLength(3);
     expect(result.join(' ')).toBe('1 2 3');
-  });
-
-  it('you should be able to add an item to the beginning of an array', function () {
-    const result = prepend(sampleArray, 10);
-
-    expect(result).toHaveLength(5);
-    expect(result[0]).toBe(10);
-  });
-
-  it('you should be able to remove the first item of an array', function () {
-    const result = curtail(sampleArray);
-
-    expect(result).toHaveLength(3);
-    expect(result.join(' ')).toBe('2 3 4');
   });
 
   it('you should be able to join together two arrays', () => {

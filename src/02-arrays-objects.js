@@ -34,7 +34,8 @@ export const insert = (arr, item, index) => {
 };
 
 /**
- * Find all items that are duplicated in an array and return a list of duplicate items.
+ * Find all items that are duplicated in an array and return a list of
+ * duplicate items.
  *
  * @param {number[]} arr An array of numbers.
  * @returns {number[]} An array of numbers found to be duplicated.
@@ -58,34 +59,14 @@ export const square = (arr) => {
  *
  * @param {number[]} arr An array of numbers.
  * @param {number} target The target item to find all occurences of.
- * @returns {number[]} An array of indices where the item was found in the array.
+ * @returns {number[]} An array of indices where the item was found in
+ *                      the array.
  */
 export const findAllOccurrences = (arr, target) => {
   return;
 };
 
 // Objects
-
-/**
- * Calls a function in the context of an object.
- *
- * @param {Function} fn
- * @param {Object} obj An object whose context the function should be called with.
- * @returns {*} The result of calling the function in context of the object.
- */
-export const alterContext = (fn, obj) => {
-  return;
-};
-
-/**
- * Alter all objects of a provided type adding a "greeting" property to all instances.
- *
- * @param {Function} constructor An object constructor function.
- * @param {string} greeting A string to set as the greeting.
- */
-export const alterObjects = (constructor, greeting) => {
-  // alter objects here
-};
 
 /**
  * Returns an array of formatted strings for an objects own properties and their

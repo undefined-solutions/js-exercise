@@ -1,13 +1,11 @@
 import {
-  alterContext,
-  alterObjects,
   duplicates,
   findAllOccurrences,
   insert,
   iterate,
   remove,
   square,
-  sum,
+  sum
 } from './02-arrays-objects';
 
 describe('arrays', () => {
@@ -61,51 +59,9 @@ describe('arrays', () => {
 });
 
 describe('objects', () => {
-  let objA;
-  let objB;
-  let TypeC;
-
-  beforeEach(() => {
-    objA = {
-      name: 'Twix',
-      greeting: 'Hello',
-      sayIt: function () {
-        return this.greeting + ', ' + this.name + '!';
-      },
-    };
-
-    objB = {
-      name: 'Drake',
-      greeting: 'Yo',
-    };
-
-    TypeC = function (name) {
-      this.name = name;
-      return this;
-    };
-  });
-
-  it('you should be able to alter the context in which a method runs', function () {
-    // define a function for fn so that the following will pass
-    expect(alterContext(objA.sayIt, objB)).toBe('Yo, Drake!');
-  });
-
-  it('you should be able to alter multiple objects at once', function () {
-    // define a function for fn so that the following will pass
-    const obj1 = new TypeC('Drake');
-    const obj2 = new TypeC('Twix');
-    const greeting = "What's up";
-
-    alterObjects(TypeC, greeting);
-
-    expect(obj1.greeting).toBe(greeting);
-    expect(obj2.greeting).toBe(greeting);
-    expect(new TypeC('Lil Guy').greeting).toBe(greeting);
-  });
-
   it('you should be able to iterate over an object\'s "own" properties', function () {
     // define a function for fn so that the following will pass
-    TypeC = function () {
+    let TypeC = function () {
       this.dog = 'Drake';
       this.cat = 'Twix';
     };
